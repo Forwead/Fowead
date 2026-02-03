@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nhắc hẹn 30 phút</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header>
+        <h1>Nhắc hẹn mỗi 30 phút</h1>
+        <p>Ứng dụng sẽ gửi thông báo định kỳ để bạn nhớ nghỉ ngơi hoặc chuyển việc.</p>
+      </header>
+
+      <section class="card">
+        <div class="status" id="status">Chưa kích hoạt.</div>
+        <div class="actions">
+          <button id="enable">Bật nhắc hẹn</button>
+          <button id="stop" disabled>Dừng</button>
+        </div>
+        <div class="meta">
+          <p>Lần nhắc tiếp theo: <span id="next">--</span></p>
+        </div>
+      </section>
+
+      <section class="tips">
+        <h2>Mẹo sử dụng</h2>
+        <ul>
+          <li>Giữ tab này mở để lịch nhắc hoạt động.</li>
+          <li>Cho phép thông báo để nhận nhắc trực quan.</li>
+          <li>Bạn có thể tắt/bật bất cứ lúc nào.</li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
