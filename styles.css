@@ -1,0 +1,108 @@
+:root {
+  color-scheme: light;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  background: #f4f6fb;
+  color: #1d2233;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+}
+
+.app {
+  max-width: 720px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+header p {
+  color: #556;
+}
+
+.card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 20px 40px rgba(40, 46, 74, 0.08);
+  display: grid;
+  gap: 16px;
+}
+
+.status {
+  font-weight: 600;
+  color: #3a57ff;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+button {
+  border: none;
+  border-radius: 999px;
+  padding: 12px 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+#enable {
+  background: #3a57ff;
+  color: #fff;
+}
+
+#stop {
+  background: #f0f2ff;
+  color: #3a57ff;
+}
+
+.meta {
+  font-size: 0.95rem;
+  color: #445;
+}
+
+.tips {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px 24px;
+}
+
+.tips h2 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+.tips ul {
+  margin-left: 20px;
+  color: #556;
+  display: grid;
+  gap: 8px;
+}
